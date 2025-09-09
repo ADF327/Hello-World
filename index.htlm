@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Mapa Mental Interactivo</title>
+    <title>V1</title>
     <style>
         #mindmap-container {
             width: 100%;
@@ -24,7 +24,7 @@
 <body>
     <div id="mindmap-container"></div>
     <button onclick="addNode()">Añadir Nodo</button>
-    <button onclick="saveMindMap()">Guardar Mapa</button>
+    <button onclick="saveMindMap()">Save</button>
 
     <script>
         let nodes = [];
@@ -33,7 +33,7 @@
         function addNode() {
             const newNode = {
                 id: Date.now(),
-                title: "Nuevo nodo",
+                title: "New Node",
                 x: 100,
                 y: 100,
                 connections: []
